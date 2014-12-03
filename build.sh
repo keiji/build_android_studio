@@ -12,7 +12,7 @@ fi
 test -d $SOURCE || mkdir $SOURCE
 
 cd $SOURCE
-test -d $REPO_DIR || ~/bin/repo init -u https://android.googlesource.com/platfor
+test -d $REPO_DIR || ~/bin/repo init -u https://android.googlesource.com/platform/manifest -b $BRANCH --depth 1
 
 ~/bin/repo sync
 cd tools/idea && ant
