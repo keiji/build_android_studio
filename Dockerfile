@@ -15,7 +15,8 @@ RUN apt-get install -y locales && \
 RUN apt-get install -y git-core ant python
 
 RUN git config --global user.email "android" && \
-		git config --global user.name "android"
+		git config --global user.name "android" && \
+		git config --global color.ui false
 
 # setup repo
 RUN mkdir ~/bin && \
